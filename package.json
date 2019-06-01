@@ -1,0 +1,43 @@
+{
+  "name": "@stackcraft/eslint-config",
+  "description": "An ESLint shareable config for StackCraft",
+  "version": "0.1.0",
+  "repository": "git@github.com:stackcraft/eslint-config-stackcraft.git",
+  "author": "Azat S. <to@azat.io>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint *.js",
+    "test": "yarn run lint"
+  },
+  "peerDependencies": {
+    "eslint": "5.16.0",
+    "eslint-plugin-fp": "2.3.0",
+    "eslint-plugin-import": "2.17.3",
+    "eslint-plugin-jest": "22.6.4",
+    "eslint-plugin-lodash-fp": "2.2.0-a1",
+    "eslint-plugin-promise": "4.1.1",
+    "eslint-plugin-ramda": "2.5.1",
+    "eslint-plugin-security": "1.4.0"
+  },
+  "dependencies": {
+    "babel-eslint": "10.0.1",
+    "vue-eslint-parser": "6.0.4"
+  },
+  "devDependencies": {
+    "eslint": "5.16.0",
+    "eslint-import-resolver-alias": "1.1.2",
+    "eslint-plugin-fp": "2.3.0",
+    "eslint-plugin-import": "2.17.3",
+    "eslint-plugin-jest": "22.6.4",
+    "eslint-plugin-lodash-fp": "2.2.0-a1",
+    "eslint-plugin-promise": "4.1.1",
+    "eslint-plugin-ramda": "2.5.1",
+    "eslint-plugin-security": "1.4.0",
+    "husky": "2.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test"
+    }
+  }
+}

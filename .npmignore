@@ -1,0 +1,15 @@
+# Node.js / NPM
+
+node_modules
+npm-debug.log
+
+# Yarn
+
+yarn-error.log
+
+# Configs
+
+.editorconfig
+.eslintrc
+.gitignore
+.prettierrc
