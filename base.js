@@ -43,8 +43,32 @@ module.exports = {
     'guard-for-in': 'error',
     'handle-callback-err': 'error',
     'id-length': 'off',
-    // eslint-disable-next-line no-magic-numbers
-    indent: ['error', 2],
+    indent: [
+      'error',
+      // eslint-disable-next-line no-magic-numbers
+      2,
+      {
+        SwitchCase: 1,
+        VariableDeclarator: 1,
+        outerIIFEBody: 1,
+        FunctionDeclaration: {
+          parameters: 1,
+          body: 1,
+        },
+        FunctionExpression: {
+          parameters: 1,
+          body: 1,
+        },
+        CallExpression: {
+          arguments: 1,
+        },
+        ArrayExpression: 1,
+        ObjectExpression: 1,
+        ImportDeclaration: 1,
+        flatTernaryExpressions: false,
+        ignoreComments: false,
+      },
+    ],
     'init-declarations': 'error',
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
     'keyword-spacing': [
