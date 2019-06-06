@@ -93,7 +93,7 @@ module.exports = {
     // eslint-disable-next-line no-magic-numbers
     'max-params': ['error', 3],
     'max-statements-per-line': ['error', { max: 1 }],
-    'new-cap': ['error', { newIsCap: true }],
+    'new-cap': 'off',
     'new-parens': 'error',
     'newline-after-var': 'off',
     'newline-before-return': 'off',
