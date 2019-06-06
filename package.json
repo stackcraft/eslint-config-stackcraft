@@ -1,7 +1,7 @@
 {
   "name": "@stackcraft/eslint-config",
   "description": "An ESLint shareable config for StackCraft",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": "git@github.com:stackcraft/eslint-config-stackcraft.git",
   "author": "Azat S. <to@azat.io>",
   "license": "MIT",
