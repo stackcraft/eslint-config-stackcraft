@@ -83,7 +83,7 @@ module.exports = {
         },
       },
     ],
-    'lines-around-comment': 'error',
+    'lines-around-comment': 'off',
     // eslint-disable-next-line no-magic-numbers
     'max-len': ['error', 80],
     // eslint-disable-next-line no-magic-numbers
